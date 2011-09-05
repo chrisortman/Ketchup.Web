@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{957053D4-D5C0-4883-8A30-08079A91DEBC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ketchup.Web</RootNamespace>
+    <AssemblyName>Ketchup.Web</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Web.WebPages, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\ebill\r\src\CustomerPortal.Web\_bin_deployableAssemblies\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mef\AttributedModelServicesExtensions.cs" />
+    <Compile Include="Mef\CompositionHost.cs" />
+    <Compile Include="Mef\ConfigFileExportProvider.cs" />
+    <Compile Include="Mef\Experimental.cs" />
+    <Compile Include="Mef\Extensions\AssemblyDiscoveryCatalog.cs" />
+    <Compile Include="Mef\Extensions\BasePartRegistration.cs" />
+    <Compile Include="Mef\Extensions\Convention.cs" />
+    <Compile Include="Mef\Extensions\ConventionDiscovery.cs" />
+    <Compile Include="Mef\Extensions\DirectoryDiscoveryCatalog.cs" />
+    <Compile Include="Mef\Extensions\DiscoveryAttribute.cs" />
+    <Compile Include="Mef\Extensions\IDiscovery.cs" />
+    <Compile Include="Mef\Extensions\Internal\ReflectionExtensions.cs" />
+    <Compile Include="Mef\Extensions\Internal\TypeExtensions.cs" />
+    <Compile Include="Mef\Extensions\MemberExportConfig.cs" />
+    <Compile Include="Mef\Extensions\MemberImportConfig.cs" />
+    <Compile Include="Mef\Extensions\MultiplePartRegistration.cs" />
+    <Compile Include="Mef\Extensions\PartRegistration.cs" />
+    <Compile Include="Mef\Extensions\SinglePartRegistration.cs" />
+    <Compile Include="Mef\FilteredCatalog.cs" />
+    <Compile Include="Mef\MefControllerFactory.cs" />
+    <Compile Include="Mef\MefDependencyResolver.cs" />
+    <Compile Include="Mef\Web\Constants.cs" />
+    <Compile Include="Mef\Web\ControlUtility.cs" />
+    <Compile Include="Mef\Web\Internal\IWebScopeMetadata.cs" />
+    <Compile Include="Mef\Web\IScopedContainerAccessor.cs" />
+    <Compile Include="Mef\Web\MefAwareControlBuilder.cs" />
+    <Compile Include="Mef\Web\MefControl.cs" />
+    <Compile Include="Mef\Web\MefHttpApplication.cs" />
+    <Compile Include="Mef\Web\MefUserControl.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mef\Web\MefWebControl.cs" />
+    <Compile Include="Mef\Web\PageHandlerFactory.cs" />
+    <Compile Include="Mef\Web\ScopedContainerManager.cs" />
+    <Compile Include="Mef\Web\WebRequestPartsCatalog.cs" />
+    <Compile Include="Mef\Web\WebScopeAttribute.cs" />
+    <Compile Include="Mef\Web\WebScopeMode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RedirectRouteHandler.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Mef\README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
