@@ -4,7 +4,7 @@ using System.ComponentModel.Composition;
 using System.ComponentModel.Composition.Primitives;
 using System.ComponentModel.Composition.ReflectionModel;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public class MultiplePartRegistration : BasePartRegistration<MultiplePartRegistration>
     {

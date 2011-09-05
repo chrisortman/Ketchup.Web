@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.Composition;
 
-namespace Microsoft.ComponentModel.Composition.Extensions.Web
+namespace Ketchup.Web.Mef.Web
 {
     [AttributeUsage(AttributeTargets.Class, AllowMultiple = false, Inherited = true)]
     [MetadataAttribute]

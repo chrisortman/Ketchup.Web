@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Composition;
 
-namespace Microsoft.ComponentModel.Composition.WebExtensions
+namespace Ketchup.Web.Mef
 {
     public static class AttributedModelServicesExtensions
     {

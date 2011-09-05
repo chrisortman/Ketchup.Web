@@ -5,9 +5,8 @@ using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Configuration;
 using System.Linq;
-using CustomerPortal;
 
-namespace Elation.CustomerPortal.Infrastructure.Composition
+namespace Ketchup.Web.Mef
 {
     public class ConfigFileExportProvider : ExportProvider
     {

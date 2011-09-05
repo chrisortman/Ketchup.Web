@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition;
 using System.Reflection;
+using Ketchup.Web.Mef.Extensions.Internal;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public class MemberExportConfig
     {

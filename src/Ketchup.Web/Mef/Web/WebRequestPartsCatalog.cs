@@ -6,9 +6,8 @@ using System.ComponentModel.Composition.Primitives;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
-using CustomerPortal;
 
-namespace Elation.CustomerPortal.Infrastructure.Composition.Web
+namespace Ketchup.Web.Mef.Web
 {
     public class RequestValues
     {

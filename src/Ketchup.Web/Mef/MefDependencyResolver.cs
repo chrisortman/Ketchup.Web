@@ -6,10 +6,9 @@ using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using Ketchup.Web.Mef.Web;
 
-using Microsoft.ComponentModel.Composition.Extensions.Web;
-
-namespace CustomerPortal.Web.Lib
+namespace Ketchup.Web.Mef
 {
     public class MefDependencyResolver : IDependencyResolver
     {

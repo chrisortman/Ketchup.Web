@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.Composition;
 using System.Web.Mvc;
 
-namespace Microsoft.ComponentModel.Composition.Extensions.Web
+namespace Ketchup.Web.Mef.Web
 {
     public static class Constants
     {

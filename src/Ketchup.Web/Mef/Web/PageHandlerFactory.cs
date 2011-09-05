@@ -8,9 +8,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 
-using Microsoft.ComponentModel.Composition.Extensions.Web;
-
-namespace Microsoft.ComponentModel.Composition.WebExtensions
+namespace Ketchup.Web.Mef.Web
 {
     public class RedirectToNotFoundHandler : IHttpHandler
     {

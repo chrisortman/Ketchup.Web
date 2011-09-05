@@ -4,7 +4,7 @@ using System.ComponentModel.Composition.Primitives;
 using System.ComponentModel.Composition.ReflectionModel;
 using System.Linq.Expressions;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public class NonGenericSinglePartRegistration : BasePartRegistration<NonGenericSinglePartRegistration>
     {

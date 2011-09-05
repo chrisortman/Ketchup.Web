@@ -1,4 +1,4 @@
-﻿namespace Microsoft.ComponentModel.Composition.Extensions.Web.Internal
+﻿namespace Ketchup.Web.Mef.Web.Internal
 {
     /// <summary>
     /// Metadata for scoping.

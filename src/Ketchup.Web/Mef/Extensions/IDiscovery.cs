@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.Composition.Primitives;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public interface IDiscovery
     {

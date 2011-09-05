@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.ComponentModel.Composition.Primitives;
-using System.Text;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public abstract class PartRegistration
     {

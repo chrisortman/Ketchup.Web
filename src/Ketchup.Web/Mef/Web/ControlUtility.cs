@@ -6,9 +6,8 @@ using System.ComponentModel.Composition.Primitives;
 using System.ComponentModel.Composition.ReflectionModel;
 using System.Linq;
 using System.Web;
-using Microsoft.ComponentModel.Composition.Extensions.Web;
 
-namespace Microsoft.ComponentModel.Composition.WebExtensions
+namespace Ketchup.Web.Mef.Web
 {
     /// <summary>
     /// Utility class to simplify the code that we need to generate

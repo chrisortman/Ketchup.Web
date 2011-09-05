@@ -4,7 +4,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Web.UI;
 
-namespace Microsoft.ComponentModel.Composition.WebExtensions
+namespace Ketchup.Web.Mef.Web
 {
     public class MefAwareControlBuilder : ControlBuilder
     {

@@ -5,7 +5,7 @@ using System.ComponentModel.Composition.Primitives;
 using System.Linq.Expressions;
 using System.Reflection;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public abstract class BasePartRegistration<TDerived> : PartRegistration where TDerived : class
     {

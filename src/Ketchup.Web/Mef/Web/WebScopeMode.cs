@@ -1,4 +1,4 @@
-﻿namespace Microsoft.ComponentModel.Composition.Extensions.Web
+﻿namespace Ketchup.Web.Mef.Web
 {
     public enum WebScopeMode
     {

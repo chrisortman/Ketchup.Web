@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel.Composition;
 
-namespace CustomerPortal.Infrastructure.Composition
+namespace Ketchup.Web.Mef
 {
     [MetadataAttribute]
     public class ExperimentalAttribute : Attribute

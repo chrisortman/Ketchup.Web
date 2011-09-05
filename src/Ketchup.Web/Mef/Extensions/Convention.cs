@@ -6,7 +6,7 @@ using System.ComponentModel.Composition.ReflectionModel;
 using System.Linq;
 using System.Reflection;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     public class Convention
     {

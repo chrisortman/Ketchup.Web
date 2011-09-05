@@ -6,10 +6,7 @@ using System.Linq;
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 
-using Microsoft.ComponentModel.Composition.Extensions.Web.Internal;
-using Microsoft.ComponentModel.Composition.WebExtensions.Internal;
-
-namespace Microsoft.ComponentModel.Composition.Extensions.Web
+namespace Ketchup.Web.Mef.Web
 {
     public class ScopedContainerManager
     {

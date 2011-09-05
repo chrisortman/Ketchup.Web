@@ -1,15 +1,12 @@
 ﻿using System;
 using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
-using System.IO;
 using System.Reflection;
 using System.Web;
 using System.Web.Compilation;
-using Elation.CustomerPortal.Infrastructure;
-using Elation.CustomerPortal.Infrastructure.Composition;
-using Elation.CustomerPortal.Infrastructure.Composition.Web;
+using Ketchup.Web.Mef.Extensions;
 
-namespace Microsoft.ComponentModel.Composition.Extensions.Web
+namespace Ketchup.Web.Mef.Web
 {
     /// <summary>
     /// Uses the application events to signal to the

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.Composition.Hosting;
 
-namespace Microsoft.ComponentModel.Composition.Extensions.Web
+namespace Ketchup.Web.Mef.Web
 {
     public interface IScopedContainerAccessor
     {

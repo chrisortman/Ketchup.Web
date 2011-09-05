@@ -6,9 +6,9 @@ using System.Web.Configuration;
 using System.Web.Mvc;
 using System.Web.Routing;
 using System.Web.SessionState;
-using Microsoft.ComponentModel.Composition.Extensions.Web;
+using Ketchup.Web.Mef.Web;
 
-namespace CustomerPortal.Web.Lib
+namespace Ketchup.Web.Mef
 {
     public class MefControllerFactory : IControllerFactory
     {

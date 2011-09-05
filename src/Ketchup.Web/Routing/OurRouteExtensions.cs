@@ -2,88 +2,9 @@ using System;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Routing;
-using System.Linq;
 
-namespace CustomerPortal.Web.Lib
+namespace Ketchup.Web.Routing
 {
-    /// <summary>
-    /// Redirect Route Handler
-    /// </summary>
-    public class RedirectRouteHandler : IRouteHandler
-    {
-        private readonly string newUrl;
-
-        public RedirectRouteHandler(string newUrl)
-        {
-            this.newUrl = newUrl;
-        }
-
-        public string RedirectToUrl
-        {
-            get {
-                return newUrl;
-            }
-        }
-
-        public IHttpHandler GetHttpHandler(RequestContext requestContext)
-        {
-            return new RedirectHandler(newUrl);
-        }
-    }
-
-    /// <summary>
-    /// <para>Redirecting MVC handler</para>
-    /// </summary>
-    public class RedirectHandler : IHttpHandler
-    {
-        private string _newUrl;
-
-        public RedirectHandler(string newUrl)
-        {
-            this._newUrl = newUrl;
-        }
-
-        public bool IsReusable
-        {
-            get { return true; }
-        }
-
-        public void ProcessRequest(HttpContext httpContext)
-        {
-            if(_newUrl.StartsWith("~"))
-            {
-                _newUrl = VirtualPathUtility.ToAbsolute(_newUrl);
-            }
-            httpContext.Response.Status = "301 Moved Permanently";
-            httpContext.Response.StatusCode = 301;
-            httpContext.Response.AppendHeader("Location", _newUrl);
-            return;
-        }
-    }
-
-    public class HttpMethodBasedRoute : Route
-    {
-        public HttpMethodBasedRoute(string url, RouteValueDictionary defaults, RouteValueDictionary constraints, IRouteHandler routeHandler) : base(url, defaults, constraints, routeHandler)
-        {
-        }
-
-        public override RouteData GetRouteData(HttpContextBase httpContext) {
-            var routeData =  base.GetRouteData(httpContext);
-
-            if(routeData != null && 
-                routeData.Values.ContainsKey(httpContext.Request.HttpMethod.ToLower()))
-            {
-                routeData.Values["action"] = routeData.Values[httpContext.Request.HttpMethod.ToLower()];
-            }
-            return routeData;
-        }
-
-        public override VirtualPathData GetVirtualPath(RequestContext requestContext, RouteValueDictionary values) {
-            var vp =  base.GetVirtualPath(requestContext, values);
-            return vp;
-        }
-    }
-
     public static class OurRouteExtensions
     {
 
@@ -132,9 +53,9 @@ namespace CustomerPortal.Web.Lib
         public static Route MapWebFormsPage(this RouteCollection routes,string routeName, string pagePath, string actualPagePath)
         {
             var route = new Route(pagePath, null, new RouteValueDictionary(new
-            {
-                xxx = new WebformsPageThatNeedsToBeRoutedConstraint(actualPagePath,routeName)
-            }), new PageRouteHandler(actualPagePath, false));
+                                                                               {
+                                                                                   xxx = new WebformsPageThatNeedsToBeRoutedConstraint(actualPagePath,routeName)
+                                                                               }), new PageRouteHandler(actualPagePath, false));
             
             if(String.IsNullOrWhiteSpace(routeName))
             {
@@ -260,10 +181,10 @@ namespace CustomerPortal.Web.Lib
             /// </returns>
             /// <param name="httpContext">An object that encapsulates information about the HTTP request.</param><param name="route">The object that this constraint belongs to.</param><param name="parameterName">The name of the parameter that is being checked.</param><param name="values">An object that contains the parameters for the URL.</param><param name="routeDirection">An object that indicates whether the constraint check is being performed when an incoming request is being handled or when a URL is being generated.</param>
             public bool Match(HttpContextBase httpContext, 
-                Route route, 
-                string parameterName, 
-                RouteValueDictionary values, 
-                RouteDirection routeDirection)
+                              Route route, 
+                              string parameterName, 
+                              RouteValueDictionary values, 
+                              RouteDirection routeDirection)
             {
                 if(routeDirection == RouteDirection.IncomingRequest)
                 {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Microsoft.ComponentModel.Composition.Extensions
+namespace Ketchup.Web.Mef.Extensions
 {
     /// <summary>
     /// Assembly level attribute that points to a discovery implementation.

@@ -4,7 +4,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Microsoft.ComponentModel.Composition.WebExtensions.Internal
+namespace Ketchup.Web.Mef
 {
     /// <summary>
     /// This catalog applies a filtering expression in into a inner set

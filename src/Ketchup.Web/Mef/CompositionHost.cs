@@ -3,7 +3,7 @@ using System.ComponentModel.Composition.Hosting;
 using System.ComponentModel.Composition.Primitives;
 using System.Threading;
 
-namespace Microsoft.ComponentModel.Composition.WebExtensions
+namespace Ketchup.Web.Mef
 {
     public static class CompositionHost
     {

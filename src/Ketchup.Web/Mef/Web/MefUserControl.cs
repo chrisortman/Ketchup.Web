@@ -1,6 +1,6 @@
 ﻿using System.Web.UI;
 
-namespace Microsoft.ComponentModel.Composition.WebExtensions
+namespace Ketchup.Web.Mef.Web
 {
     [ControlBuilder(typeof(MefAwareControlBuilder))]
     public abstract class MefUserControl : UserControl
