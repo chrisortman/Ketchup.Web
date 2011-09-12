@@ -84,7 +84,7 @@ namespace Ketchup.Web.Mef.Web
             return agg;
         }
 
-        private void OnBeginRequest(object sender, EventArgs e)
+        protected virtual void OnBeginRequest(object sender, EventArgs e)
         {
             var httpContext = HttpContext.Current;
             _containerManager.CreateRequestContainer(httpContext.Items,
