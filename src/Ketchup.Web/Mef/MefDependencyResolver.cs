@@ -76,7 +76,7 @@ namespace Ketchup.Web.Mef
     {
         private ScopedContainerManager _scopeManager;
 
-        public MefFilterAttributeProvider(ScopedContainerManager scopeManager)
+        public MefFilterAttributeProvider(ScopedContainerManager scopeManager) :base(false)
         {
             _scopeManager = scopeManager;
         }
