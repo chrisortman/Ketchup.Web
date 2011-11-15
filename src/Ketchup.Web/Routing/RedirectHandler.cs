@@ -25,6 +25,11 @@ namespace Ketchup.Web.Routing
             {
                 _newUrl = VirtualPathUtility.ToAbsolute(_newUrl);
             }
+
+            if(httpContext.Request.QueryString.Count > 0)
+            {
+                _newUrl += httpContext.Request.Url.Query;
+            }
             httpContext.Response.Status = "301 Moved Permanently";
             httpContext.Response.StatusCode = 301;
             httpContext.Response.AppendHeader("Location", _newUrl);

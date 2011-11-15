@@ -2,6 +2,13 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ketchup.Web", "src\Ketchup.Web\Ketchup.Web.csproj", "{957053D4-D5C0-4883-8A30-08079A91DEBC}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestSite", "src\TestSite\TestSite.csproj", "{46A890BA-E532-4175-B454-46B31C4EC6FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A2CDC10-B9E9-4246-85B6-0EFE63DE0BE7}"
+	ProjectSection(SolutionItems) = preProject
+		src\Ketchup.Web\Ketchup.Web.nuspec = src\Ketchup.Web\Ketchup.Web.nuspec
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,6 +19,10 @@ Global
 		{957053D4-D5C0-4883-8A30-08079A91DEBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{957053D4-D5C0-4883-8A30-08079A91DEBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{957053D4-D5C0-4883-8A30-08079A91DEBC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46A890BA-E532-4175-B454-46B31C4EC6FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46A890BA-E532-4175-B454-46B31C4EC6FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46A890BA-E532-4175-B454-46B31C4EC6FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46A890BA-E532-4175-B454-46B31C4EC6FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
